@@ -2,9 +2,9 @@
 
 namespace Encodia\SomethingWrong\Tests;
 
+use Encodia\SomethingWrong\SomethingWrongServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Encodia\SomethingWrong\SomethingWrongServiceProvider;
 
 class TestCase extends Orchestra
 {
