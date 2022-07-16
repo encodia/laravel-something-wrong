@@ -4,7 +4,6 @@ namespace Encodia\SomethingWrong;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Encodia\SomethingWrong\Commands\SomethingWrongCommand;
 
 class SomethingWrongServiceProvider extends PackageServiceProvider
 {
