@@ -17,5 +17,7 @@ class SomethingWrongServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-something-wrong')
             ->hasConfigFile();
+
+        app()->bind('laravel-something-wrong', SomethingWrong::class);
     }
 }

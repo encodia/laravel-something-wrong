@@ -1,4 +1,3 @@
-
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
 
 # Something wrong
@@ -26,12 +25,76 @@ php artisan vendor:publish --tag="laravel-something-wrong-config"
 
 ## Usage
 
-@TODO 
+Note: the current version only supports **Bugsnag**.
+
+This means that anything you notify will use Bugsnag under the hood to send
+a notification.
+
+### Where
+
+Typically, you will inject `Encodia\SomethingWrong` in your service class constructor:
 
 ```php
-$somethingWrong = new Encodia\SomethingWrong();
-echo $somethingWrong->echoPhrase('Hello, Encodia!');
+
+use \Encodia\SomethingWrong;
+
+class MyService {
+    private SomethingWrong $somethingWrong;
+
+    public function __construct(SomethingWrong $somethingWrong)
+    {        
+        $this->somethingWrong = $somethingWrong;
+    }
+    
+    public function doSomething(): void
+    {
+        // ...
+        $this->somethingWrong
+            ->exception(
+                new \Exception("This wasn't supposed to happen, so let's notify it!")
+        );
+        
+        // ...        
+    }
+}
+
+    
 ```
+
+If you prefer, you can use its facade:
+
+```php
+use \Encodia\SomethingWrong\Facades\SomethingWrong;
+
+// ...
+SomethingWrong::exception(
+    new \Exception("This wasn't supposed to happen, so let's notify it!")
+);
+
+```
+
+### How
+
+You can notify a simple exception, without any further details:
+
+```php
+SomethingWrong::exception(
+    new \Exception("Something wrong happened!")
+);
+
+```
+
+If you need to add any details, just pass an array as second argument:
+
+```php
+SomethingWrong::exception(
+    new \Exception("Something wrong happened!"),
+    [
+        'foo' => 'bar',
+        'path' => 'a/b/c',
+        'user' => auth()->user,
+    ],
+);
 
 ## Testing
 
