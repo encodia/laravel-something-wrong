@@ -7,7 +7,9 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/encodia/laravel-something-wrong/Check%20&%20fix%20styling?label=code%20style)](https://github.com/encodia/laravel-something-wrong/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/encodia/laravel-something-wrong.svg?style=flat-square)](https://packagist.org/packages/encodia/laravel-something-wrong)
 
-A simple package for Laravel to notify handled errors, exceptions and more
+A simple package for Laravel to notify handled errors, exceptions and more.
+
+**Note**: this package is still under development and currently its features are very limited.
 
 ## Installation
 
@@ -95,6 +97,7 @@ SomethingWrong::exception(
         'user' => auth()->user,
     ],
 );
+```
 
 ## Testing
 
