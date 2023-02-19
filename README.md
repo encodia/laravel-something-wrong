@@ -3,8 +3,9 @@
 # Something wrong
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/encodia/laravel-something-wrong.svg?style=flat-square)](https://packagist.org/packages/encodia/laravel-something-wrong)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/encodia/laravel-something-wrong/run-tests?label=tests)](https://github.com/encodia/laravel-something-wrong/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/encodia/laravel-something-wrong/Check%20&%20fix%20styling?label=code%20style)](https://github.com/encodia/laravel-something-wrong/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/encodia/laravel-something-wrong/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/encodia/laravel-something-wrong/actions/workflows/run-tests.yml)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/encodia/laravel-something-wrong/php-cs-fixer.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/encodia/laravel-something-wrong/actions/workflows/php-cs-fixer.yml)
+
 [![Total Downloads](https://img.shields.io/packagist/dt/encodia/laravel-something-wrong.svg?style=flat-square)](https://packagist.org/packages/encodia/laravel-something-wrong)
 
 A simple package for Laravel to notify handled errors, exceptions and more.
