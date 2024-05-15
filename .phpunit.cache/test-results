@@ -1,0 +1,1 @@
+{"version":"pest_2.34.7","defects":[],"times":{"P\\Tests\\ExceptionTest::__pest_evaluable_it_can_notify_an_exception_without_meta":0.067,"P\\Tests\\ExceptionTest::__pest_evaluable_it_can_be_accessed_via_its_facade":0.005,"P\\Tests\\ExceptionTest::__pest_evaluable_it_can_notify_an_exception_with_meta":0.003}}
