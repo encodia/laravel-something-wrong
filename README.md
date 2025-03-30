@@ -26,9 +26,9 @@ php artisan vendor:publish --tag="laravel-something-wrong-config"
 
 ## Usage
 
-Note: the current version only supports **Bugsnag**.
+Note: the current version only supports **Insight Hub** (formerly Bugsnag).
 
-This means that anything you notify will use Bugsnag under the hood to send
+This means that anything you notify will use Insight Hub under the hood to send
 a notification.
 
 ### Where
