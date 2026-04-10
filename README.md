@@ -1,11 +1,18 @@
 # Something wrong
 
+![Abandoned](https://img.shields.io/badge/status-abandoned-red)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/encodia/laravel-something-wrong.svg?style=flat-square)](https://packagist.org/packages/encodia/laravel-something-wrong)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/encodia/laravel-something-wrong/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/encodia/laravel-something-wrong/actions/workflows/run-tests.yml)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/encodia/laravel-something-wrong/php-cs-fixer.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/encodia/laravel-something-wrong/actions/workflows/php-cs-fixer.yml)
 
 [![Total Downloads](https://img.shields.io/packagist/dt/encodia/laravel-something-wrong.svg?style=flat-square)](https://packagist.org/packages/encodia/laravel-something-wrong)
 
+## ⚠️ Package deprecated
+
+This package is no longer maintained.
+Please consider using alternatives or forking it if needed.
+
+--- 
 A simple package for Laravel to notify handled errors, exceptions and more.
 
 **Note**: this package is still under development and currently its features are very limited.
